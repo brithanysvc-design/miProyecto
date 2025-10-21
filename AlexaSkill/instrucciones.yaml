@@ -1,0 +1,62 @@
+  1. Abrir la skill (LaunchRequest)
+
+  - "Alexa, abre lista de compras"
+  - "Abrir lista de compras"
+  - "Iniciar lista de compras"
+
+  2. Crear listas (CrearListaIntent)
+
+  - "Crea una lista llamada supermercado"
+  - "Nueva lista farmacia"
+  - "Crear lista de verdulería"
+  - "Quiero crear una lista mercado"
+  - "Agrega una nueva lista compras navideñas"
+  - "Inicia una lista fin de semana"
+
+  3. Consultar listas (ListarListasIntent)
+
+  - "Qué listas tengo"
+  - "Muéstrame mis listas"
+  - "Cuáles son mis listas"
+  - "Mis listas de hoy"
+
+  4. Eliminar listas (EliminarListaIntent) ⭐ NUEVO
+
+  - "Elimina la lista supermercado"
+  - "Borra la lista farmacia"
+  - "Quita la lista mercado"
+
+  5. Agregar productos con cantidad y unidad (AgregarProductoIntent)
+
+  - "Agrega leche"
+  - "Añade pan"
+  - "Agrega 2 manzanas"
+  - "Añade 3 kilos de tomates"
+  - "Agrega 5 litros de agua"
+  - "Necesito 1 kilo de carne"
+
+  6. Eliminar productos (EliminarProductoIntent) ⭐ NUEVO
+
+  - "Elimina leche"
+  - "Borra pan"
+  - "Quita manzanas"
+  - "Elimina tomates de la lista"
+
+  7. Ver productos (ListarProductosIntent)
+
+  - "Qué hay en la lista"
+  - "Qué productos tengo"
+  - "Lista los productos"
+  - "Lee mi lista"
+
+  8. Marcar como comprado (MarcarProductoIntent)
+
+  - "Marca leche como comprado"
+  - "Leche está comprado"
+  - "Compré huevos"
+  - "Ya compré tomates"
+
+  9. Ayuda, Salir, Cancelar
+
+  - "Ayuda" / "Qué puedo hacer"
+  - "Cancelar" / "Salir" / "Adiós"

@@ -1,0 +1,257 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "lista de compras",
+      "intents": [
+        {
+          "name": "CrearListaIntent",
+          "slots": [
+            {
+              "name": "nombreLista",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "crea una lista llamada {nombreLista}",
+            "nueva lista {nombreLista}",
+            "crear lista de {nombreLista}",
+            "quiero crear una lista {nombreLista}",
+            "agrega una nueva lista {nombreLista}",
+            "inicia una lista {nombreLista}"
+          ]
+        },
+        {
+          "name": "ListarListasIntent",
+          "slots": [
+            {
+              "name": "fecha",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "qué listas tengo",
+            "muéstrame mis listas",
+            "cuáles son mis listas",
+            "lista mis listas",
+            "qué listas tengo para {fecha}",
+            "muéstrame las listas de {fecha}",
+            "listas de hoy",
+            "mis listas de hoy"
+          ]
+        },
+        {
+          "name": "EliminarListaIntent",
+          "slots": [
+            {
+              "name": "nombreLista",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "elimina la lista {nombreLista}",
+            "borra la lista {nombreLista}",
+            "quita la lista {nombreLista}",
+            "eliminar lista {nombreLista}",
+            "borrar la lista de {nombreLista}",
+            "quiero borrar la lista {nombreLista}"
+          ]
+        },
+        {
+          "name": "AgregarProductoIntent",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "cantidad",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unidad",
+              "type": "UnidadMedida"
+            },
+            {
+              "name": "nombreLista",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "agrega {producto}",
+            "añade {producto}",
+            "agrega {cantidad} {producto}",
+            "añade {cantidad} {unidad} de {producto}",
+            "agrega {cantidad} {producto} a la lista",
+            "pon {producto} en la lista",
+            "agrega {producto} a la lista {nombreLista}",
+            "añade {cantidad} {unidad} de {producto} a {nombreLista}",
+            "quiero agregar {producto}",
+            "necesito {cantidad} {producto}"
+          ]
+        },
+        {
+          "name": "EliminarProductoIntent",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            }
+          ],
+          "samples": [
+            "elimina {producto}",
+            "borra {producto}",
+            "quita {producto}",
+            "elimina {producto} de la lista",
+            "borra {producto} de la lista",
+            "quiero quitar {producto}"
+          ]
+        },
+        {
+          "name": "ListarProductosIntent",
+          "slots": [
+            {
+              "name": "nombreLista",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "qué hay en la lista",
+            "qué productos tengo",
+            "lista los productos",
+            "cuáles son los productos",
+            "qué necesito comprar",
+            "qué hay en mi lista de compras",
+            "qué productos tengo en {nombreLista}",
+            "muéstrame la lista {nombreLista}",
+            "lee mi lista",
+            "lee la lista de {nombreLista}"
+          ]
+        },
+        {
+          "name": "MarcarProductoIntent",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "estado",
+              "type": "EstadoProducto"
+            }
+          ],
+          "samples": [
+            "marca {producto} como {estado}",
+            "marca {producto} {estado}",
+            "{producto} está {estado}",
+            "cambiar {producto} a {estado}",
+            "el {producto} ya está {estado}",
+            "compré {producto}",
+            "ya compré {producto}",
+            "marcar {producto} como comprado"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "ayúdame",
+            "qué puedo hacer",
+            "qué puedes hacer",
+            "cómo funciona"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "olvídalo",
+            "déjalo"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detener",
+            "parar",
+            "terminar",
+            "salir"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "UnidadMedida",
+          "values": [
+            {
+              "name": {
+                "value": "kilogramos",
+                "synonyms": ["kilos", "kg"]
+              }
+            },
+            {
+              "name": {
+                "value": "gramos",
+                "synonyms": ["gr", "g"]
+              }
+            },
+            {
+              "name": {
+                "value": "litros",
+                "synonyms": ["l"]
+              }
+            },
+            {
+              "name": {
+                "value": "mililitros",
+                "synonyms": ["ml"]
+              }
+            },
+            {
+              "name": {
+                "value": "unidades",
+                "synonyms": ["unidad", "piezas", "pieza"]
+              }
+            },
+            {
+              "name": {
+                "value": "paquetes",
+                "synonyms": ["paquete", "cajas", "caja"]
+              }
+            },
+            {
+              "name": {
+                "value": "docenas",
+                "synonyms": ["docena"]
+              }
+            }
+          ]
+        },
+        {
+          "name": "EstadoProducto",
+          "values": [
+            {
+              "name": {
+                "value": "comprado",
+                "synonyms": ["listo", "hecho", "terminado"]
+              }
+            },
+            {
+              "name": {
+                "value": "pendiente",
+                "synonyms": ["por comprar", "falta"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
