@@ -83,8 +83,8 @@
             "añade {cantidad} {unidad} de {producto}",
             "agrega {cantidad} {producto} a la lista",
             "pon {producto} en la lista",
-            "agrega {producto} a la lista {nombreLista}",
-            "añade {cantidad} {unidad} de {producto} a {nombreLista}",
+            "agrega {producto} a la lista",
+            "añade {cantidad} {unidad} de {producto}",
             "quiero agregar {producto}",
             "necesito {cantidad} {producto}"
           ]
